@@ -1,0 +1,303 @@
+:root{
+    --poppins: "Poppins";
+    --tomato : #fe5e35;
+}
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    background-color: #fff;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin:10px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    height: 30px;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-item{
+    margin-left:25px;
+    margin-right: 25px;
+    font-family: var(--poppins);
+    font-size:16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+.active-item{
+    color:var(--tomato);
+    font-weight: 900;
+}
+.intro-section{
+    margin:10px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-section h3{
+   font-size:30px;
+   font-family: var(--poppins);
+   font-weight: 500;
+   margin-bottom: 0;
+}
+.left-section h3 img{
+    margin-left: 5px;
+    height: 30px;
+}
+.left-section h1{
+    font-size:60px;
+    font-family: 'Fredoka One';
+    font-weight: 400;
+    margin-top: 0;
+}
+.sub-headlines{
+    margin:0px 70px;
+}
+.sub-headline{
+    font-size:18px;
+    font-family: var(--poppins);
+    font-weight: 500;
+    margin-left: 20px;
+}
+.sub-headline img{
+    position:relative;
+    top:5px;
+    height: 15px;
+    background-color:var(--tomato);
+    padding:5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.text{
+    font-family: var(--poppins);
+    font-size:12px;
+    margin-top: 50px;
+    color:#a4a4a4;
+}
+.action-btns{
+    margin:40px 0px;
+}
+.action-btn{
+    padding:10px 20px;
+    border-radius: 30px;
+    font-size:14px;
+    font-family: var(--poppins);
+    border:none;
+    outline:0;
+    font-weight: 500;
+    margin-right: 20px;
+    background-color: var(--tomato);
+    color:#fff;
+    cursor: pointer;
+}
+.right-section{
+    margin-left: 10px;
+    width: 100%;
+    position: relative;
+}
+.headphone-div img:last-child{
+  height: 400px;
+  position:relative;
+  bottom:180px;
+  left:10px;
+  z-index: -2;
+}
+.discount{
+    height: 120px !important;
+    z-index: -1;
+    position:relative;
+    top:238px !important;
+    right:30px !important;
+}
+.discount-content{
+    z-index: 3;
+    position:relative;
+    top:146px;
+}
+.discount-content h4, .discount-content h1{
+    margin:0;
+    color:#fff;
+}
+.discount-content h4{
+  font-family: var(--poppins);
+   margin-left: 8px; 
+   font-size: 12px;
+}
+.discount-content h1{
+    font-family: 'Fredoka One';
+    font-size:40px;
+    font-weight: 500;
+    position: relative;
+    bottom:10px;
+    right:8px;
+}
+.dots{
+    position:absolute;
+    bottom:25%;
+    left:130px;
+    display: flex;
+    flex-direction: row;
+}
+.dot{
+    height: 25px;
+    width: 25px;  
+    border-radius: 50%; 
+    margin:0px 15px; 
+}
+.yellow-dot{
+    background-color: #fbd104;
+}
+.tomato-dot{
+    background-color: var(--tomato);
+}
+.black-dot{
+    background-color: #000;
+}
+.right-section .action-btn{
+    position:absolute;
+    bottom:60px;
+    left:150px;
+}
+
+/* media query for mobile */
+@media screen and (max-width:576px) {
+    nav{
+        margin:40px 20px 20px 20px;
+    }
+    nav img{
+        height: 40px;
+    }
+    .hamburger{
+        display: block;
+        font-size: 30px;
+    }
+    .nav-items, nav img:nth-child(3){
+        display: none;
+    }
+    .intro-section{
+        flex-direction: column;
+        align-items: center;
+        margin:20px 20px;
+    }
+    .sub-headlines{
+        margin:0px;
+    }
+    .sub-headline{
+        margin-left: 0px;
+        font-size:25px;
+    }
+    .text{
+        font-size:20px;
+    }
+    .action-btns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .action-btn{
+        font-size:18px;
+        padding:10px 15px; 
+    }
+    .right-section{
+        margin:20px 0px;
+    }
+    .headphone-div img:last-child {
+        bottom: 180px;
+        left:-6px;
+        width: 100%;
+    }
+    .discount {
+        height: 115px !important;
+    }
+    .discount-content h4{
+        font-size:16px;
+        position: relative;
+        right:12px;
+    }
+    .discount-content h1 {
+        font-size:30px;
+        bottom:-5px;
+        left:3px;
+    }
+    .dots{
+        left:80px;
+    }
+    .right-section .action-btn {
+        left:85px;
+        font-size:20px;
+    }
+
+}
+
+/* media query for tablet */
+@media screen and (min-width:600px) and (max-width:830px) {
+    nav{
+        margin:40px 20px 20px 20px;
+    }
+    nav img{
+        height: 40px;
+    }
+    .hamburger{
+        display: block;
+        font-size: 30px;
+    }
+    .nav-items, nav img:nth-child(3){
+        display: none;
+    }
+    .intro-section{
+        margin:20px;
+        flex-direction: column;
+    }
+    .sub-headlines{
+        margin:0px;
+    }
+    .sub-headline {
+        font-size:22px;
+    }
+    .text{
+        font-size:22px;
+    }
+    .action-btn{
+        font-size:20px;
+    }
+    .headphone-div img:last-child{
+        bottom:150px;
+        left:100px;
+        height: 550px;
+    }
+    .discount{
+      height: 150px !important;
+      top:400px !important;
+      left:5%;
+    }
+    .discount-content{
+        width: 50%;
+        top:290px;
+        left:9%;
+    }
+    .discount-content h4 {
+        font-size:20px;
+    }
+    .discount-content h1 {
+        right:-6px;
+    }
+    .dots {
+        bottom:16%;
+        left:285px;
+    }
+    .right-section .action-btn {
+      bottom:38px;
+      left:290px;
+      font-size:20px;
+    }
+}
